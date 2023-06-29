@@ -1,0 +1,33 @@
+ .collapse {
+     padding: 0px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .navbar-nav {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     margin: 16px 73px 11px 59px;
+
+     .nav-link {
+         color: $text-color;
+         font-size: 16px;
+         line-height: 146%;
+         letter-spacing: 0.08px;
+     }
+ }
+
+ .btn_header,
+ .nav-link {
+     white-space: nowrap;
+ }
+
+ .navbar-toggler {
+  &[aria-expanded="true"]{
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+ }
