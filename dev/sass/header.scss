@@ -1,7 +1,5 @@
  .collapse {
      padding: 0px;
-     display: flex;
-     justify-content: space-around;
  }
 
  .navbar-nav {
@@ -23,11 +21,63 @@
      white-space: nowrap;
  }
 
- .navbar-toggler {
-  &[aria-expanded="true"]{
-    .navbar-collapse{
-        display: flex;
-        flex-direction: column;
-    }
-  }
+ .navbar-toggler-icon {
+     background: none;
+
  }
+
+ .navbar-toggler {
+     padding: 4px;
+
+     &:focus {
+         box-shadow: none;
+         border: none;
+     }
+
+     .navbar-toggler-icon {
+         width: 27.5px;
+         height: 2.5px;
+         background-color: white;
+         position: relative;
+
+         &::after,&::before {
+             content: "";
+             width: 27.5px;
+             height: 2.5px;
+             background-color: white;
+             position: absolute;
+             top: 9px;
+             right: 0;
+             transition: 1s;
+         }
+
+         &::before {
+            top: -9px;
+         }
+     }
+
+     &[aria-expanded="true"] {
+         .navbar-toggler-icon {
+             background: none;
+
+             &::after {
+                 transform: translate(0px, -9px) rotate(45deg);
+             }
+
+             &::before {
+                 transform: translate(0px, 9px) rotate(-45deg);
+             }
+         }
+     }
+ }
+
+//  .show {
+//      display: flex;
+//      flex-direction: column;
+//      align-items: center;
+
+//      .navbar-nav {
+//          flex-direction: column;
+//          align-items: center;
+//      }
+//  }
