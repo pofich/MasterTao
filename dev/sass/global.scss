@@ -1,7 +1,6 @@
 body {
     background-color: $bg-primary;
-    color: $text-color;
-  
+    color: $text-color;  
   }
   .container{
     max-width: 1170px;
@@ -10,3 +9,13 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
+  .btn{
+    &:focus{
+      box-shadow: none;
+    }
+    &:focus-visible{
+      box-shadow: none;
+    }
+    
+  }
+  

@@ -1,12 +1,11 @@
 .first-screen {
     position: relative;
-
+    .container{
+        margin-bottom: 64px;
+        padding: 0 20px 0 140px;
+    }
     &-slider {
-
-        margin: 23px 50px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-top: 23px;
 
         .first-screen-slider_title {
             max-width: 463px;
@@ -32,30 +31,34 @@
         }
 
         .slider {
-            border-radius: 20px;
-            padding: 163px 340px 228px;
             max-width: 1820px;
             min-height: 700px;
             display: flex;
             align-items: center;
-
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
     }
 }
 
 .first-screen-slider_arrows {
+    //поле для стрілок
+    // margin: 0 100px 0 100px;
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(calc(50% - -20px), -50%);
-    max-width: 1523px;
-    display: flex;
+    transform: translate(50% , -50%);
+    max-width: 1723px;
     width: 100%;
+    display: flex;
     justify-content: space-between;
-    margin: 0 20px 0 20px;
+    padding: 0 100px;
+
 
     .slick-arrow {
+        //ліва і права
         width: 50px;
         height: 50px;
         background-color: transparent;
@@ -89,6 +92,9 @@
     }
 
     .slick-prev {
+        //стрілка назад
+        // transform: translate(187px, 0);
+        margin-right: auto;
         &::after {
             transform: translate(-9px, 22px) rotate(45deg);
         }
@@ -97,16 +103,27 @@
             transform: translate(-9px, 22px) rotate(-45deg);
         }
     }
+
+    .slick-next {
+        //стрілка вперед
+        // transform: translate(-187px, 0);
+        &::after,
+        &::before {
+            background-color: $text-color;
+        }
+
+    }
 }
 
 .slick-dots {
+    //точки активного слайду
     display: flex;
     position: absolute;
     bottom: 43px;
     left: 50%;
     transform: translate(-50%, 0);
 
-    .slick-active{
+    .slick-active {
         background-color: $text-color;
         border-radius: 50%;
     }
