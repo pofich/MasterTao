@@ -7,13 +7,33 @@
         .first-screen-slider_subtitle {
             max-width: 345px;
         }
+
         .slider {
             border-radius: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
         }
 
         section {
             padding-left: 50px;
             padding-right: 50px;
+        }
+    }
+
+    .calculation {
+        &-form {
+            margin-left: 15px;
+        }
+
+        .padding {
+            padding-top: 20px;
+        }
+
+        .template-title {
+            &:after {
+                content: "";
+                display: none;
+            }
         }
     }
 }

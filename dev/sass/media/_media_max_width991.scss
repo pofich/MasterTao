@@ -55,34 +55,54 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center; 
+            align-items: center;
             z-index: 1;
-           
+
         }
+
         .first-screen-slider_title {
             font-size: 32px;
-            margin-bottom: 10px;           
+            margin-bottom: 10px;
         }
+
         .first-screen-slider_subtitle {
             font-size: 16px;
             margin-bottom: 18px;
         }
+
         .slider {
-          min-height: calc(100vh - 74px);
-         position: relative; 
-              &::after{
+            min-height: calc(100vh - 74px);
+            position: relative;
+
+            &::after {
                 content: "";
                 position: absolute;
                 top: 0px;
                 left: 0px;
                 right: 0px;
-                bottom: 0px;        
+                bottom: 0px;
                 background: #282b3866;
             }
         }
-        &-slider{            
+
+        &-slider {
             margin-bottom: 15px;
         }
     }
 
+    .calculation {
+        &__img {
+            display: none;
+        }
+
+        .col-lg-7 {
+            text-align: center;
+            h2 {
+                &:after {
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+    }
 }

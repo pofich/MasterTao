@@ -1,3 +1,9 @@
 @media screen and (min-width: 768px) {
-
+    .calculation {
+        &-form {
+            .input-column {
+                margin: 0 15px;
+            }
+        }
+    }
 }
