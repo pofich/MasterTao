@@ -6,8 +6,9 @@
     }
 
     .navbar {
-        padding-top: 17px;
-        padding-bottom: 0px;
+        padding-top: 13px;
+        padding-bottom: 12px;
+        margin-top: 0px;
 
         &-brand {
             img {
@@ -51,7 +52,7 @@
 
     .first-screen {
         .container {
-            padding: 0 28px;
+            margin-bottom: -25px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -61,11 +62,13 @@
         }
 
         .first-screen-slider_title {
+             padding: 0 25px;
             font-size: 32px;
             margin-bottom: 10px;
         }
 
         .first-screen-slider_subtitle {
+            padding: 0 32px;
             font-size: 16px;
             margin-bottom: 18px;
         }
@@ -104,5 +107,14 @@
                 }
             }
         }
+        .template-title {
+            h2 {
+            font-size: 24px;           
+        }
+        &:after {
+            content: "";
+            top: calc(100% + 22px);
+        }
+    }
     }
 }

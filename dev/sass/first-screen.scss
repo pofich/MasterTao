@@ -1,11 +1,15 @@
 .first-screen {
     position: relative;
-    .container{
+
+    .container {
         margin-bottom: 64px;
         padding: 0 20px 0 14px;
     }
+
     &-slider {
-        margin:23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .first-screen-slider_title {
             font-weight: 700;
@@ -21,12 +25,6 @@
             font-size: 20px;
             line-height: 135.5%;
             margin-bottom: 37px;
-        }
-
-        .first-screen-slider {
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         .slider {
@@ -48,7 +46,7 @@
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(50% , -50%);
+    transform: translate(50%, -50%);
     max-width: 1723px;
     width: 100%;
     display: flex;
@@ -94,6 +92,7 @@
         //стрілка назад
         // transform: translate(187px, 0);
         margin-right: auto;
+
         &::after {
             transform: translate(-9px, 22px) rotate(45deg);
         }
@@ -104,6 +103,7 @@
     }
 
     .slick-next {
+
         //стрілка вперед
         // transform: translate(-187px, 0);
         &::after,
@@ -148,4 +148,3 @@
     }
 
 }
-
