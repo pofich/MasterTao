@@ -1,4 +1,11 @@
 @media (min-width: 992px) {
+    section {
+        margin-bottom:  113px;        
+    }    
+    .navbar{
+        margin-top: 10px;
+        margin-bottom: 21px;
+     }
     .first-screen {
         .first-screen-slider_title {
             max-width: 463px;
@@ -36,4 +43,8 @@
             }
         }
     }
+    .container-fluid {
+        border-radius: 20px;
+        margin-top: 119px;
+}
 }

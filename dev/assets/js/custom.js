@@ -12,7 +12,80 @@ $(document).ready(function(){
             },
           ]
     });
+
+
+
+
+
+    mobileOnlySlider("#advantages-slider", true, false, 991);
+    function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+    var slider = $($slidername);
+    var settings = {
+        mobileFirst: true,
+        dots: $dots,
+        arrows: $arrows,
+        responsive: [
+        {
+            breakpoint: $breakpoint,
+            settings: "unslick"
+        }
+        ]
+    };
+
+    slider.slick(settings);
+
+    $(window).on("resize", function () {
+        if ($(window).width() > $breakpoint) {
+        return;
+        }
+        if (!slider.hasClass("slick-initialized")) {
+        return slider.slick(settings);
+        }
+    });
+    } // Mobile Only Slider
+
+    $('.slider-template').slick({
+        dots: false,
+        infinite: true,
+   
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1310,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 890,
+            settings: {
+              slidesToShow: 1,
+             
+            }
+          },
+          {
+            breakpoint: 530,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+              arrows: false,
+            }
+          },
+        ]
+      });
+
+
+
+      
   });
+
+
+
+
+
+
   const checkbox = document.querySelectorAll('[type="checkbox"]')
 
 
