@@ -3,7 +3,6 @@
     background-color: $color-secondary;
 }
 
-
 section {
     margin-top: 0;
     margin-left: auto;
@@ -155,6 +154,14 @@ body {
         font-weight: 700;
         line-height: 124.5%;
         text-transform: uppercase;
+    }
+}
+.text-left{
+    text-align: left;
+    &:after {
+        content: "";
+        left: 0;
+        transform: translate(0, 0);
     }
 }
 

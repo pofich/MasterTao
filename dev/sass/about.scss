@@ -1,0 +1,26 @@
+.about {
+    .template-title{
+        margin-bottom: 64px;
+    }
+    .container {
+        display: flex;
+    }
+    .about-projeсt{
+    margin-top: 35px;
+    margin-right: 38px;
+    }
+    .about-projeсt-box {
+        max-width: 555px;
+        p{
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 170%;
+            display: inline-block;
+        }
+    }
+    .about-img-box{
+        margin-top: -21px;
+       max-width: 550px;
+        }
+ 
+}
