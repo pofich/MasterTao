@@ -11,7 +11,7 @@
         }
 
         .container-fluid {
-            padding: 55px 20px 60px;
+            padding: 56px 20px 94px;
 
             &:before {
                 left: 0px;
@@ -115,14 +115,16 @@
         &.advantages {
             .slick-dots {
                 bottom: -51px;
+                justify-content: center;
             }
             .col-lg-3 {
                 margin-top: 0px;
             }
+            .container-fluid{
+                margin-bottom: 20px;
+            }
         }
     }
-}
-
 .calculation {
     &__img {
         display: none;
@@ -146,3 +148,8 @@
         top: calc(100% + 22px);
     }
 }
+
+
+
+}
+

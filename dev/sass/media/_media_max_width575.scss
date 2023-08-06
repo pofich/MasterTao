@@ -1,3 +1,24 @@
 @media screen and (max-width: 575px) {
     
 }
+@media screen and (max-width: 530px) {
+    .slider-template {      
+        .slick-list{
+            margin-bottom: 32px;
+        }
+     .slide-box{
+        margin: 0 auto;
+     }
+     .slide-img-box{
+        img{
+            min-height: 230px;
+        }
+     }
+     .slick-dots {
+        bottom: -57px;
+    }
+    .slide-box{
+        max-width: 335px;
+    }    
+}
+}
