@@ -1,0 +1,44 @@
+.services {
+    .slide-box {
+        position: relative;
+        min-height: 482px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 0 20px 33px ;
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0.00) 100%);
+
+        }
+
+        .slide-img-box {
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            }
+
+            .slide-title,
+            .slide-description,
+            .slide-buttons {
+                position: relative;
+                text-align: left;
+                z-index: 1;
+            }
+
+            .slide-title,
+            .slide-description {
+                margin-bottom: 13px;
+            }
+        }
+    }
