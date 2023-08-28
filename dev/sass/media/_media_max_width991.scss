@@ -153,12 +153,16 @@
     }
 
     .about {
+        .about-img-box {
+            margin: -21px 34px;
+        }
         .container {
             flex-direction: column;
             align-items: center;
         }
-        .about-projeсt{
-            margin-right: 0; 
+
+        .about-projeсt {
+            margin-right: 0;
             margin-bottom: 25px;
         }
 
@@ -182,6 +186,54 @@
 
         .template-title {
             text-align: center;
+        }
+    }
+
+    .faq {
+        .faq-box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .template-title {
+            margin-top: 0px;
+            margin-bottom: 52px;
+        }
+
+        .faq-form {
+            padding: 38px 20px;
+            .form-title,
+            .form-subtitle{
+                text-align: center;
+            }
+
+        }
+        .accordion {
+            margin-bottom: 22px;
+            margin-right: 0px;
+
+            .accordion-body {
+                padding: 0px 15px 12px 22px;
+                font-size: 14px;
+            }
+
+            .accordion-button {
+                padding: 12px 20px 12px 22px;
+                font-size: 16px;
+                &[aria-expanded=true] {
+                    padding-bottom: 3px;
+                    padding-top: 15px;
+                }
+            }
+
+            .accordion-item {
+                margin-bottom: 15px;
+            }
         }
     }
 

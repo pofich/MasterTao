@@ -1,11 +1,22 @@
 @media (min-width: 992px) {
-    section {
-        margin-bottom:  113px;        
-    }    
-    .navbar{
+
+    .first-screen {
+        margin-bottom: 101px
+    }
+
+    .advantages {
+        .container-fluid {
+            border-radius: 20px;
+            margin-top: 119px;
+        }
+    }
+
+
+    .navbar {
         margin-top: 10px;
         margin-bottom: 21px;
-     }
+    }
+
     .first-screen {
         .first-screen-slider_title {
             max-width: 463px;
@@ -33,7 +44,8 @@
         }
 
         .padding {
-            padding-top: 20px;
+            padding-top: 23px;
+            // padding-top: 20px;
         }
 
         .template-title {
@@ -43,8 +55,5 @@
             }
         }
     }
-    .container-fluid {
-        border-radius: 20px;
-        margin-top: 119px;
-}
+
 }

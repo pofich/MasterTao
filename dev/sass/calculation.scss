@@ -1,15 +1,18 @@
-.calculation{
-     .container{
+.calculation {
+    .container {
         position: relative;
     }
+
     &__img {
         max-width: 560px;
-        width: 36vw; 
+        width: 36vw;
         position: absolute;
-       bottom: -118px;
+        // bottom: -141px;
+        top: -47px;
         right: -18px;
     }
 }
+
 .calculation-form {
     max-width: 626px;
     width: 100%;
@@ -30,44 +33,52 @@
 
     .has-checkbox {
         margin-bottom: 12px;
+
         [type="checkbox"] {
             label {
                 display: flex;
-                align-items: center ;
+                align-items: center;
             }
         }
     }
 
-    #myfile{
+    #myfile {
         display: none;
     }
-    label[for="myfile"]{
+
+    label[for="myfile"] {
         text-align: center;
         border-radius: 10px;
         border: 1px dashed rgba(255, 255, 255, 0.26);
         padding-top: 12px;
-        padding-bottom: 17px;
+        // padding-bottom: 17px;
+        padding-bottom: 11px;
+        margin-bottom: 9px;
 
     }
+
     .btn {
         max-width: 251px;
         padding: 19.6px 29px;
     }
+
     #file-name {
-        margin: 0 0 12px;
+        margin: 14px 0 12px;
+        // margin: 0 0 12px;
         font-size: 15px;
         line-height: 126%;
     }
 
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
- 
+
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }

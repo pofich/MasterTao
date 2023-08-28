@@ -1,0 +1,124 @@
+.faq {
+    margin-top: 114px;
+
+    .faq-box {
+        display: flex;
+    }
+
+    .template-title {
+        margin-top: -60px;
+        margin-bottom: 71px;
+
+        &::after {
+            content: '';
+            background: $color-primary;
+        }
+    }
+
+    .accordion {
+        max-width: 716px;
+        width: 100%;
+          margin-right: 34px;
+
+        .accordion-button {
+            background-color: transparent;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: none;
+            color: $text-color;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 124.5%;
+            padding: 16px 17px 19px 34px;
+
+            &::after {
+                content: '';
+                width: 27px;
+                height: 27px;
+                background: url(/assets/img/arrow-circle-left-white.png) center/contain no-repeat;
+            }
+
+            &[aria-expanded="true"] {
+                background: #FFF;
+                color: $bg-primary;
+                padding-bottom: 12px;
+
+                &::after {
+                    content: '';
+                    background: url(/assets/img/arrow-circle-left.png) center/contain no-repeat;
+                    transform: rotate(-90deg);
+                    transition: 1.5s;
+                }
+            }
+        }
+
+        .accordion-body {
+            border-radius: 0px 0px 10px 10px;
+            background: #FFF;
+            box-shadow: 5px 15px 40px 0px rgba(11, 24, 97, 0.32);
+            color: $bg-primary;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 144.5%;
+            padding: 0px 99px 21px 34px;
+
+        }
+
+        .accordion-item {
+            background-color: $bg-primary;
+            border: 1px solid #3A444E;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            transition: 2s;
+        }
+
+    }
+
+    .faq-form {
+        max-width: 390px;
+        width: 100%;
+        background-color: $bg-secondary;
+        border-radius: 20px;
+        padding: 38px 40px;
+
+        .form-title {
+            h3 {
+                color: $text-color;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 126%;
+            }
+
+        }
+
+        .form-subtitle {
+            margin-bottom: 23px;
+
+            h6 {
+                color: $text-color;
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 126%;
+            }
+        }
+
+        input {
+            padding: 16px 20px;
+        }
+
+        .input-box {
+            margin-bottom: 14px;
+        }
+
+        #question {
+            padding-bottom: 28px;
+            // min-height: 70px;
+        }
+
+        .btn_arrow_left {
+            width: 100%;
+            margin: 12px 0px 0px;
+            // padding: 23px 19px 22px 33px;
+        }
+    }
+
+}

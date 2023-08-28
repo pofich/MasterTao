@@ -11,7 +11,8 @@ section {
 }
 
 .container-fluid {
-    padding: 90px 85px 100px;
+    // padding: 90px 85px 100px;
+    padding: 90px 85px 90px;
     position: relative;
 
     &:before {
@@ -28,8 +29,8 @@ section {
 }
 
 .input-box {
-
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+    // margin-bottom: 22px;
     display: flex;
     flex-direction: column;
 
@@ -97,8 +98,10 @@ body {
     font-size: 16px;
     font-weight: 600;
     line-height: 146%;
-    padding: 22px 97px 22px 33px;
+    padding: 23px 19px 22px 33px;
+    text-align: left;
     position: relative;
+    width: 100%;
 
     &::after {
         content: '';
@@ -134,7 +137,8 @@ body {
 }
 
 .template-title {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
+    // margin-bottom: 50px;
     position: relative;
     text-align: center;
 
