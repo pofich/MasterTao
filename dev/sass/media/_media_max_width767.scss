@@ -1,13 +1,49 @@
 @media screen and (max-width: 767px) {
     .calculation {
-        &-form{
+        &-form {
             padding: 53px 34px 12px;
         }
-        .btn{
+
+        .btn {
             max-width: 100%;
         }
+
         .input-row {
             flex-direction: column;
         }
     }
+
+    .cooperation {
+        .container {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .cooperation-text-box {
+            li {
+                text-align: justify;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 149.5%;
+            }
+        }
+    }
+
+
+
+    footer {
+        .footer-column-box:nth-child(n+2) {
+            display: none;
+        }
+
+        .footer-column-box {
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: 263px;
+        }
+
+
+    }
+
 }
