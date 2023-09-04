@@ -1,4 +1,5 @@
 @media screen and (max-width: 991px) {
+
     section {
         margin-bottom: 60px;
 
@@ -10,8 +11,9 @@
             }
         }
 
+
         .container-fluid {
-            padding: 56px 20px 94px;
+            padding: 56px 20px 60px;
 
             &:before {
                 left: 0px;
@@ -128,6 +130,7 @@
         }
     }
 
+
     .calculation {
         &__img {
             display: none;
@@ -143,12 +146,14 @@
                         display: none;
                     }
                 }
-            }
-        }
 
-        &:after {
-            content: "";
-            top: calc(100% + 22px);
+                &:after {
+                    content: "";
+                    left: 50%;
+                    top: calc(100% + 19px);
+                    transform: translate(-50%, 0);
+                }
+            }
         }
     }
 
@@ -156,6 +161,7 @@
         .about-img-box {
             margin: -21px 34px;
         }
+
         .container {
             flex-direction: column;
             align-items: center;
@@ -207,12 +213,14 @@
 
         .faq-form {
             padding: 38px 20px;
+
             .form-title,
-            .form-subtitle{
+            .form-subtitle {
                 text-align: center;
             }
 
         }
+
         .accordion {
             margin-bottom: 22px;
             margin-right: 0px;
@@ -225,6 +233,7 @@
             .accordion-button {
                 padding: 12px 20px 12px 22px;
                 font-size: 16px;
+
                 &[aria-expanded=true] {
                     padding-bottom: 3px;
                     padding-top: 15px;

@@ -14,7 +14,6 @@ section {
     // padding: 90px 85px 100px;
     padding: 90px 85px 90px;
     position: relative;
-
     &:before {
         content: "";
         position: absolute;
@@ -23,14 +22,21 @@ section {
         top: 0;
         height: 100%;
         background-color: $bg-secondary;
-
         z-index: -1;
     }
 }
+section:nth-child(odd){
+   .template-title{
+    &::after {
+        content: '';
+        background: $color-primary;
+    }
+} 
+}
+
 
 .input-box {
     margin-bottom: 20px;
-    // margin-bottom: 22px;
     display: flex;
     flex-direction: column;
 

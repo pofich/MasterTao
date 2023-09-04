@@ -1,0 +1,49 @@
+.cooperation {
+    margin-top: 100px;
+    .cooperation-row-box {
+        display: flex;
+        margin: 0 -15px;
+        margin-top: 70px;
+    }
+
+    .cooperation-column-box {
+        margin-top: 110px;
+    }
+
+    .cooperation-text-box:nth-child(n+2) {
+        margin-top: 23px;
+        margin-left: 15px;
+    }
+
+    .cooperation-img-box,
+    .cooperation-text-box {
+        width: 50%;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .cooperation-text-box {
+        ul {
+            list-style: disc inside;
+            padding: 0;
+        }
+
+        li {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 156.5%;
+            margin-bottom: 1.5rem;
+        }
+        button{
+            max-width: 243px;
+        }
+    }
+
+    .cooperation-img-box {}
+
+    img {
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    }
+}
